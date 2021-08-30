@@ -14,6 +14,8 @@ a {
 * {
   box-sizing: border-box;
 }
+
+/***** lib css artK ***/
 .flex {
   display: flex;
 }
@@ -45,17 +47,7 @@ a {
 .w-lg {
   width: 75%;
 }
-.react-datepicker__header.react-datepicker__header--custom > div {
-  display: flex;
-  justify-content: center;
-}
-button.btn-right > div {
-  width: 20px;
-}
-button.btn-left > div {
-  transform: rotate(180deg);
-  width: 20px;
-}
+/************Date picker *********/
 
 .react-datepicker__day--highlighted:hover:before {
   content: attr(aria-label);
@@ -68,13 +60,21 @@ button.btn-left > div {
   background: rgb(0 0 0 / 78%);
   border-radius: 15px;
 }
-//flex justify-center max-h-xl  h-96  float-left w-1/2
-
 .css-class-to-highlight .ui-state-default {
   background-color: #ff6a00;
 }
+.react-datepicker__header.react-datepicker__header--custom > div {
+  display: flex;
+  justify-content: center;
+}
+button.btn-right > div {
+  width: 20px;
+}
+button.btn-left > div {
+  transform: rotate(180deg);
+  width: 20px;
+}
 
-/************Date picker *********/
 .react-datepicker__day--highlighted:hover:before {
   content: attr(aria-label);
   position: absolute;
@@ -114,7 +114,6 @@ button.btn-left > div {
   background: #333;
   color: #ff723c;
 }
-
 .btn-left img {
   transform: rotate(180deg) !important;
   max-width: 30px;
