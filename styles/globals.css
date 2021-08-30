@@ -14,3 +14,122 @@ a {
 * {
   box-sizing: border-box;
 }
+.flex {
+  display: flex;
+}
+.justify-center {
+  justify-content: center;
+}
+.items-center {
+  align-items: center;
+}
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.min-h-lg {
+  min-height: 32rem;
+}
+.h-lg {
+  height: 32rem;
+}
+.max-h-xl {
+  max-height: 32rem;
+}
+.rotate-180 {
+  transform: rotate(180deg);
+}
+.w-50prc {
+  width: 50%;
+}
+.w-lg {
+  width: 75%;
+}
+.react-datepicker__header.react-datepicker__header--custom > div {
+  display: flex;
+  justify-content: center;
+}
+button.btn-right > div {
+  width: 20px;
+}
+button.btn-left > div {
+  transform: rotate(180deg);
+  width: 20px;
+}
+
+.react-datepicker__day--highlighted:hover:before {
+  content: attr(aria-label);
+  position: absolute;
+  width: 100px;
+  white-space: pre-wrap;
+  line-height: 1.5;
+  opacity: 1;
+  color: white;
+  background: rgb(0 0 0 / 78%);
+  border-radius: 15px;
+}
+//flex justify-center max-h-xl  h-96  float-left w-1/2
+
+.css-class-to-highlight .ui-state-default {
+  background-color: #ff6a00;
+}
+
+/************Date picker *********/
+.react-datepicker__day--highlighted:hover:before {
+  content: attr(aria-label);
+  position: absolute;
+  width: 100px;
+  white-space: pre-wrap;
+  line-height: 1.5;
+  opacity: 1;
+  color: white;
+  background: rgb(0 0 0 / 78%);
+  border-radius: 15px;
+}
+
+.resultContainer {
+  display: flex;
+  justify-content: center;
+  float: left;
+  align-items: center;
+  height: auto;
+}
+
+.css-class-to-highlight .ui-state-default {
+  background-color: #ff6a00;
+}
+.calendar {
+  float: left;
+  display: inline-block;
+  margin-right: 10px;
+  background: white;
+}
+.resultDays {
+  float: left;
+  display: inline-block;
+  max-height: 300px;
+  overflow-y: scroll;
+  padding: 15px 29px;
+  height: 275px;
+  background: #333;
+  color: #ff723c;
+}
+
+.btn-left img {
+  transform: rotate(180deg) !important;
+  max-width: 30px;
+}
+.btn-right img {
+  max-width: 30px;
+}
+.react-datepicker__day--highlighted:hover:before {
+  content: attr(aria-label);
+  position: absolute;
+  width: 100px;
+  white-space: pre-wrap;
+  line-height: 1.5;
+  opacity: 1;
+  color: white;
+  background: rgb(0 0 0 / 78%);
+  border-radius: 15px;
+}
