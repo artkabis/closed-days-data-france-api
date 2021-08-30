@@ -46,4 +46,4 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
 ## Exemple with Vercel
-[App : closed days api data-france](https://closed-days-data-france-api.vercel.app/)
+[Closed days -Fetching data to api-france](https://closed-days-data-france-api.vercel.app/)
