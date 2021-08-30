@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useRef } from "react";
 import DatePicker, { registerLocale } from "react-datepicker";
 import fr from "date-fns/locale/fr";
 import "react-datepicker/dist/react-datepicker.css";
@@ -10,10 +10,14 @@ const dateFormat = "Pp";
 
 const DatesPicker = ({ datas, titles, dates }) => {
   const [startDate, setStartDate] = useState(new Date());
+  let datepickerRef = useRef();
+
+  console.log(datepickerRef.current);
   var finalDate = [];
   for (var i in datas) {
     finalDate.push(new Date(i));
   }
+  console.log(titles);
   const Input = ({ onChange, placeholder, value, isSecure, id, onClick }) => (
     <input
       onChange={onChange}
@@ -56,6 +60,7 @@ const DatesPicker = ({ datas, titles, dates }) => {
     <div className="white-box p-y-20">
       <div className="flex justify-center items-center">
         <DatePicker
+          ref={datepickerRef}
           dateFormat={dateFormat}
           locale={fr}
           customInput={<Input />}
@@ -127,7 +132,14 @@ const DatesPicker = ({ datas, titles, dates }) => {
           selected={startDate}
           fixedHeight
           highlightDates={finalDate}
+          tileContent={({ date, view }) => {
+            console.log("titleContent date >>> ", date, "  view  : ", view);
+            Object.keys(date).map((e) =>
+              e === dates ? <p>{titles}</p> : null
+            );
+          }}
           placeholderText={titles}
+          dayAriaLabel={titles}
           inline
         />
       </div>
