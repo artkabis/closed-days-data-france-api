@@ -2,6 +2,18 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+clone this repo :
+
+```bash
+git clone https://github.com/artkabis/closed-days-data-france-api.git
+```
+
+Install node_modules :
+
+```bash
+npm i -s
+```
+
 First, run the development server:
 
 ```bash
